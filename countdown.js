@@ -1,17 +1,30 @@
-const countdown = () => {
-  const weddingDate = new Date('2023-10-13T12:00:00Z').getTime();
-  const now = new Date().getTime();
-  const difference = weddingDate - now;
+function getTimeRemaining() {
+  const now = new Date();
+  const weddingDate = new Date('October 13, 2023 12:00:00');
+  const total = weddingDate - now;
 
-  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const seconds = Math.floor((total / 1000) % 60);
 
-  document.getElementById('days').innerHTML = days;
-  document.getElementById('hours').innerHTML = hours;
-  document.getElementById('minutes').innerHTML = minutes;
-  document.getElementById('seconds').innerHTML = seconds;
-};
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
 
-setInterval(countdown, 1000);
+function updateCountdown() {
+  const remainingTime = getTimeRemaining();
+
+  document.getElementById('days').innerHTML = remainingTime.days;
+  document.getElementById('hours').innerHTML = remainingTime.hours;
+  document.getElementById('minutes').innerHTML = remainingTime.minutes;
+  document.getElementById('seconds').innerHTML = remainingTime.seconds;
+}
+
+setInterval(updateCountdown, 1000);
+
