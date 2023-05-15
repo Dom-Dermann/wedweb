@@ -89,21 +89,21 @@ Suspendisse non condimentum felis, eu convallis nulla. Suspendisse metus sapien,
   
   <section id="location">
     <h2>Location</h2>
-  <div id="map"></div>
-  <script>
-    function initMap() {
-      var location = {lat: 47.289, lng: 11.158}; // coordinates of Wayereralm
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: location
-      });
-      var marker = new google.maps.Marker({
-        position: location,
-        map: map
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+     <div id="map"></div>
+     <script>
+       function initMap() {
+         var location = {lat: 47.289, lng: 11.158}; // coordinates of Wayereralm
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 15,
+           center: location
+         });
+         var marker = new google.maps.Marker({
+           position: location,
+           map: map
+         });
+       }
+     </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dapibus eros, nec consequat nulla. Nulla facilisi. Quisque lacinia tempus nibh quis placerat. Cras metus erat, pulvinar sit amet gravida at, volutpat vitae felis. Phasellus in mi molestie, ornare eros sed, semper ligula. Suspendisse tincidunt in elit sed feugiat. Vestibulum quis fermentum lacus, vel viverra urna. Nulla in eros tortor. Maecenas posuere dolor at nulla commodo vestibulum. Sed vel diam sit amet arcu lobortis dapibus. Etiam et lorem interdum, posuere mauris sed, vulputate urna. Etiam rutrum sem nunc, eget aliquet turpis feugiat vitae.
 
 Duis lobortis ligula ac tortor laoreet consequat sit amet in libero. Duis tincidunt eget mi sed ultrices. Aliquam ex diam, tempor quis rhoncus eget, tincidunt quis dui. Vivamus laoreet velit eget nunc feugiat, eget finibus augue tempor. In hac habitasse platea dictumst. Quisque dapibus lacus risus, at commodo metus volutpat id. Praesent pulvinar est ultrices odio euismod, sed lobortis mi bibendum. Proin quam nisi, ullamcorper et elit ut, maximus gravida nunc. Pellentesque non dui eget dui porta congue sit amet a orci. Morbi facilisis at dolor in viverra. Praesent bibendum leo a nulla fringilla commodo. In et est nec mauris mollis laoreet quis sed nulla. Vivamus sit amet urna nec purus dictum molestie vel at turpis. Vestibulum varius cursus est eget ultricies. Mauris a ipsum vitae neque rutrum aliquam a sit amet dolor.
