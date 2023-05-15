@@ -1,5 +1,7 @@
 body {
-  background-color: #F7E7CE;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
