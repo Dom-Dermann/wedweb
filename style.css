@@ -95,3 +95,29 @@ section::before {
   max-height: 100%;
   object-fit: contain;
 }
+
+#countdown {
+  background-color: #f6f6f6;
+  padding: 50px;
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-timer div {
+  margin: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-width: 60px;
+}
