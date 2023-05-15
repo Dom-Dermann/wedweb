@@ -60,7 +60,7 @@ nav a:hover::before {
 
 section {
   background-color: rgba(255, 255, 255, 0.8);
-  margin: 0 auto;
+  margin: 3em auto;
   padding: 3em 1em;
   max-width: 800px;
   position: relative;
